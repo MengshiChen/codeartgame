@@ -20,7 +20,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(1200,1200);
+  createCanvas(1000,1000);
   noCursor();
   sound.play();
 }
@@ -28,33 +28,32 @@ function setup() {
 function draw() {
 
   background(img1,0,0);
-  image(cloud, xpos, 300);
+  image(cloud, xpos, 200);
   image(img2,mouseX,mouseY);
-  
+
   if (xpos > width) {
-    
+
     xspeed = -1;
   }
-    
+
   if (xpos< 0){
-    
+
     xspeed = 1;
   }
     xpos += xspeed;
-    
+
   if(mouseIsPressed){
-    image(img4,400,670);
+    image(img4,400,570);
   }
-  else{image(grass,500,780);
+  else{image(grass,500,680);
         }
 image(img2, mouseX,mouseY);
 
   if(mouseIsPressed){
-    image(img5,20,20);
+    image(img5,10,20);
   }
-  else{image(img3,20,20);
+  else{image(img3,10,20);
         }
 image(img2, mouseX,mouseY);
-  
+
 }
-
