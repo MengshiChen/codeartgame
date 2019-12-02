@@ -10,7 +10,6 @@ var img4;
 var img5;
 function preload() {
   cloud=loadImage('clound-1.png');
-  sound=loadSound('mariogame.mp3');
   grass = loadImage('grass-3.png');
   img1= loadImage('background.PNG');
   img2= loadImage('mouse-1.png');
@@ -22,7 +21,6 @@ function preload() {
 function setup() {
   createCanvas(1000,1000);
   noCursor();
-  sound.play();
 }
 
 function draw() {
