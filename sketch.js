@@ -1,7 +1,6 @@
 var xspeed = 1;
 var xpos = 0;
 var cloud;
-var sound;
 var grass;
 var img1;
 var img2;
@@ -16,6 +15,7 @@ function preload() {
   img3= loadImage('sun1-1.png');
   img4=loadImage('pikachu-1.png');
   img5=loadImage('sun2-1.png');
+
 }
 
 function setup() {
